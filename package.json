@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-parrot-css",
-  "version": "1.0",
+  "version": "1.1.0",
   "description": "Parrot CSS is a completely configurable utility-first CSS framework built on pure SCSS, no javascript is required",
   "main": "index.js",
   "scripts": {
