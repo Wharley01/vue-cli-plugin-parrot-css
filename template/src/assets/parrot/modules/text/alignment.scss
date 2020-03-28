@@ -40,3 +40,5 @@
 }
 
 @include text-alignment-for-screen('',':hover','hover\\:');
+@include text-alignment-for-screen('',':focus','focus\\:');
+@include text-alignment-for-screen('',':active','active\\:');

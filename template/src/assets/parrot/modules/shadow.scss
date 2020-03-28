@@ -1,14 +1,22 @@
 @mixin shadow-for-screen($screen,$state,$state_name){
-
-  /*::Shadows shadow-**/
   @each $element, $shadow in $shadows {
+    @if should-replace('#{$shadow}','color') == false {
     .#{$state_name}#{$screen}shadow-#{$element}#{$state} {
-      box-shadow: $shadow!important;
+      box-shadow: #{$shadow}
+    }
     }
   }
+  @each $element1, $color in $colors {
+    @each $element, $shadow in $shadows {
+    @if should-replace('#{$shadow}','color') {
+      .#{$state_name}#{$screen}shadow-#{$element}-#{$element1}#{$state} {
+        box-shadow: str-replace($shadow,'color',$color);
+      }
+    }
+    }
 
-
-}
+    }
+  }
 
 
 
@@ -38,3 +46,5 @@
   @include shadow-for-screen('xxlg-','','');
 }
 @include shadow-for-screen('',':hover','hover\\:');
+@include shadow-for-screen('',':focus','focus\\:');
+@include shadow-for-screen('',':active','active\\:');

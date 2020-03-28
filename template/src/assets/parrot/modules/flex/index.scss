@@ -4,7 +4,7 @@
     display: flex!important;
   }
 
-  #{$screen}column{
+  .#{$screen}column{
     flex-direction: column!important;
   }
 
@@ -43,4 +43,3 @@
   /*.desktop-up */
   @include flex-index-for-screen('xxlg-');
 }
-

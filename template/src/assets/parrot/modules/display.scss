@@ -2,6 +2,12 @@
   .#{$state_name}#{$screen}hide#{$state}{
     display: none!important;
   }
+  .#{$state_name}#{$screen}invisible#{$state}{
+    visibility: hidden!important;
+  }
+  .#{$state_name}#{$screen}visible#{$state}{
+    visibility: visible!important;
+  }
   .#{$state_name}#{$screen}block#{$state}{
     display: block!important;
   }
@@ -47,5 +53,5 @@
 }
 
 @include display-for-screen('',':hover','hover\\:');
-
-
+@include display-for-screen('',':focus','focus\\:');
+@include display-for-screen('',':active','active\\:');

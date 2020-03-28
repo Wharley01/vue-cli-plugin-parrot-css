@@ -46,3 +46,5 @@
 }
 
 @include text-color-for-screen('',':hover','hover\\:');
+@include text-color-for-screen('',':focus','focus\\:');
+@include text-color-for-screen('',':active','active\\:');

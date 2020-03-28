@@ -48,3 +48,5 @@
   @include width-for-screen('xxlg-','','');
 }
 @include width-for-screen('',':hover','hover\\:');
+@include width-for-screen('',':focus','focus\\:');
+@include width-for-screen('',':active','active\\:');

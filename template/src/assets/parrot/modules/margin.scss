@@ -68,4 +68,5 @@
 }
 
 @include margin-for-screen('',':hover','hover\\:');
-
+@include margin-for-screen('',':focus','focus\\:');
+@include margin-for-screen('',':active','active\\:');

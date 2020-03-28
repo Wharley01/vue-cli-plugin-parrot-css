@@ -46,4 +46,5 @@
 }
 
 @include text-weight-for-screen('',':hover','hover\\:');
-
+@include text-weight-for-screen('',':focus','focus\\:');
+@include text-weight-for-screen('',':active','active\\:');

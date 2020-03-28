@@ -48,3 +48,5 @@
   @include border-width-for-screen('xxlg-','','');
 }
 @include border-width-for-screen('',':hover','hover\\:');
+@include border-width-for-screen('',':focus','focus\\:');
+@include border-width-for-screen('',':active','active\\:');

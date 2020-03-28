@@ -1,1 +1,141 @@
+// Components here
+.input{
+  @extend .focus\:shadow-outline-pry;
+  @extend .bd-round-x2;
+  @extend .inline-block;
+  @extend .p-r-x4;
+  @extend .p-l-x4;
+  @extend .p-t-x3;
+  @extend .p-b-x3;
+  @extend .bd-c-grey-shade-1;
+  @extend .bd-x1;
+}
 
+.button{
+  @extend .bg-pry;
+  @extend .bd-none;
+  @extend .p-l-x9;
+  @extend .p-r-x9;
+  @extend .p-t-x3;
+  @extend .p-b-x3;
+  @extend .bd-round-x2;
+  @extend .focus\:shadow-outline-pry-tint-2;
+  @extend .txt-center;
+}
+
+.card{
+  @extend .p-x6;
+  @extend .bd-round-x4;
+  @extend .shadow-x4;
+  transition: none;
+}
+
+
+.header_bg{
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+
+.body_bg{
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+
+.interlude{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.phone{
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+}
+
+.container{
+  @extend .m-l-auto;
+  @extend .m-r-auto;
+  @extend .p-x5;
+  max-width: 1200px;
+}
+
+.error-list{
+  ul{
+    padding: 10px 10px;
+    @extend .txt-c-error;
+    li{
+      margin-bottom: 4px;
+    }
+  }
+}
+
+body{
+  overflow-x: hidden;
+}
+
+/* SCSS */
+.vue-typer {
+  /* Styles for the vue-typer container
+     e.g. font-family, font-size  */
+
+  .custom.char {
+    /* Styles for each character
+       e.g. color, background-color */
+
+    &.typed {
+      /* Styles specific to typed characters
+         i.e. characters to the left of the caret */
+      @extend .txt-c-white
+    }
+    &.selected {
+      /* Styles specific to selected characters
+         i.e. characters to the right of the caret while VueTyper's
+              'eraseStyle' is set to a selection-based style */
+    }
+    &.erased {
+      /* Styles specific to erased characters
+         i.e. characters to the right of the caret while VueTyper's
+              'eraseStyle' is set to a non-selection-based style */
+    }
+  }
+
+  .custom.caret {
+    /* Styles for the caret
+       e.g. background-color, animation, display */
+
+    &.pre-type {
+      /* Styles for the caret when it is idle before typing
+         i.e. before a string starts being typed, during 'preTypeDelay' */
+    }
+    &.pre-erase {
+      /* Styles for the caret when it is idle before erasing
+         i.e. before a string starts being erased, during 'preEraseDelay' */
+    }
+    &.idle {
+      /* Styles for the caret when it is idle, but VueTyper has not yet completed typing
+         i.e. when 'pre-type' or 'pre-erase' is set, but not 'complete' */
+    }
+    &.typing {
+      /* Styles for the caret while VueTyper is typing
+         i.e. when the caret is moving forwards */
+    }
+    &.selecting {
+      /* Styles for the caret while VueTyper is selecting
+         i.e. when the caret is moving backwards and 'eraseStyle' is
+         set to a selection-based style */
+    }
+    &.erasing {
+      /* Styles for the caret while VueTyper is erasing
+         i.e. when the caret is moving backwards and 'eraseStyle' is
+         set to a non-selection-based style */
+    }
+    &.complete {
+      /* Styles for the idle caret when VueTyper has finished all typing/erasing */
+    }
+  }
+}

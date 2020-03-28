@@ -33,6 +33,16 @@
       }
     }
   }
+
+  /*
+  Z-INDEX
+  */
+
+  @for $size from 1 through 10{
+    .#{$state_name}#{$screen}z-#{$size}#{$state} {
+      z-index: $size!important;
+    }
+  }
 }
 
 @include positioning-for-screen('','','');
@@ -62,3 +72,5 @@
 }
 
 @include positioning-for-screen('',':hover','hover\\:');
+@include positioning-for-screen('',':focus','focus\\:');
+@include positioning-for-screen('',':active','active\\:');

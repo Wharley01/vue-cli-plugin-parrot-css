@@ -11,6 +11,8 @@
 
 @include text-color-for-screen('','','');
 @include text-color-for-screen('',':hover','hover\\:');
+@include text-color-for-screen('',':focus','focus\\:');
+@include text-color-for-screen('',':active','active\\:');
 
 @media only screen and (max-width: 599px) {
   @include text-color-for-screen('sm-','','');
@@ -35,5 +37,3 @@
   /*.desktop-up */
   @include text-color-for-screen('xxlg-','','');
 }
-
-

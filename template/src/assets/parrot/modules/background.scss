@@ -3,7 +3,7 @@
 
   @each $element, $color in $colors {
     .#{$state_name}#{$screen}bg-#{$element}#{$state} {
-      background-color: $color!important;
+      background: $color!important;
     }
   }
 }
@@ -36,3 +36,5 @@
 }
 
 @include background-for-screen('',':hover','hover\\:');
+@include background-for-screen('',':focus','focus\\:');
+@include background-for-screen('',':active','active\\:');

@@ -37,3 +37,5 @@
 }
 
 @include text-size-for-screen('',':hover','hover\\:');
+@include text-size-for-screen('',':focus','focus\\:');
+@include text-size-for-screen('',':active','active\\:');

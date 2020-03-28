@@ -1,8 +1,11 @@
 $shadows: (
-        normal: 13px 11px 59px rgba(0, 0, 0, 0.15),
-        light: 0px 4px 41px rgba(169, 69, 255, 0.75),
-        lighter: 4px 3px 18px rgba(169, 69, 255, 0.19),
-        dark: 0 15px 35px 0 rgba(42,51,83,.12),
-        darker: 13px 11px 59px rgba(0, 0, 0, 0.48),
-        flat: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        outline: "0 0 0 3px color!important",
+        x1: "0 0 0 1px rgba(0, 0, 0, 0.05)!important",
+        x2: "0 1px 2px 0 rgba(0, 0, 0, 0.05)!important",
+        normal: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)!important",
+        x3: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)!important",
+        x4: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)!important",
+        x5: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)!important",
+        x6: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+        inset: "inset 0 2px 4px 0 color!important"
 );

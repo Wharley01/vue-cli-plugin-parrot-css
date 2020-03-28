@@ -1,33 +1,56 @@
 :root{
-  --pry: #A945FF;
-  --pry-tint-1: #DF99FF;
-  --pry-tint-2: #EFCCFF;
-  --pry-shade-1: #13062C;
-  --pry-shade-2: #13062C;
-  --pry-shade-3: #0b071d;
+  --pry: #009FE3;
+  --pry-tint-1: #42c6ff;
+  --pry-tint-2: #8eddff;
+  --pry-tint-3: #d9f4ff;
+  --pry-shade-1: #0094d4;
+  --pry-shade-2: #006a97;
+  --pry-shade-3: #00405b;
+  --red: #8F0622;
+  --green: #219653;
+  --purple: #9B51E0;
+  --grey: #ececec;
+  --grey-shade-1: #dcdcdc;
+  --grey-shade-2: #cdcdcd;
+  --grey-shade-3: #bdbdbd;
+  --grey-shade-4: #adadad;
+  --grey-shade-5: #9d9d9d;
   --link-color: #A945FF;
   --black: #151a28;
   --yellow: #EBEF3B;
   --white: #fff;
   --none: transparent;
-  --error: #ef4e23;
+  --error: #ff7e1f;
+  --error-tint-1: #ffd7cb;
   --success: #59d065;
   --info: #54c5dd
 }
 
-$colors: (
-        pry: var(--pry),
-        pry-tint-1: var(--pry-tint-1),
-        pry-tint-2: var(--pry-tint-2),
-        pry-shade-1: var(--pry-shade-1),
-        pry-shade-2: var(--pry-shade-2),
-        pry-shade-3: var(--pry-shade-3),
-        link-color: var(--link-color),
-        black: var(--black),
-        yellow: var(--yellow),
-        white: var(--white),
-        none: var(--none),
-        error: var(--error),
-        success: var(--success),
-        info: var(--info)
-);
+$colors:(
+        pry:  var(--pry),
+        pry-gradient:  var(--pry-gradient),
+        pry-tint-1:  var(--pry-tint-1),
+        pry-tint-2:  var(--pry-tint-2),
+        pry-tint-3:  var(--pry-tint-3),
+        pry-shade-1:  var(--pry-shade-1),
+        pry-shade-2:  var(--pry-shade-2),
+        pry-shade-3:  var(--pry-shade-3),
+        red:  var(--red),
+        green:  var(--green),
+        purple:  var(--purple),
+        grey:  var(--grey),
+        grey-shade-1:  var(--grey-shade-1),
+        grey-shade-2:  var(--grey-shade-2),
+        grey-shade-3:  var(--grey-shade-3),
+        grey-shade-4:  var(--grey-shade-4),
+        grey-shade-5:  var(--grey-shade-5),
+        link-color:  var(--link-color),
+        black:  var(--black),
+        yellow:  var(--yellow),
+        white:  var(--white),
+        none:  var(--none),
+        error:  var(--error),
+        error-tint-1:  var(--error-tint-1),
+        success:  var(--success),
+        info:  var(--info),
+)
